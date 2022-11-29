@@ -2,9 +2,8 @@
   /* width: 30%; */
   text-align: center;
   margin-top: 5rem;
-  padding:0 35% 35%;
+  padding: 0 35% 35%;
   height: 10vh;
-  
 }
 
 input {
@@ -20,7 +19,6 @@ button {
 .btn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
 }
 
 .container {
