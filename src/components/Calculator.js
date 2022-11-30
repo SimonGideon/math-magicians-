@@ -1,5 +1,5 @@
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
+/* eslint-disable react/destructuring-assignment */
 import '../App.css';
 import calculate from '../logic/calculate';
 
