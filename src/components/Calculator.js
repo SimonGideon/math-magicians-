@@ -1,78 +1,89 @@
-import React from 'react';
+/* eslint-disable react/destructuring-assignment */
+import React, { useState } from 'react';
 import '../App.css';
+import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
-class Calculator extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        <form>
-          <input type="text" />
-        </form>
-        <div className="btn">
-          <button type="button" name="0">
-            AC
-          </button>
-          <button type="button" name="0">
-            +/-
-          </button>
-          <button type="button" name="0">
-            %
-          </button>
-          <button className="d" type="button" name="0">
-            ÷
-          </button>
-          <button type="button" name="0">
-            9
-          </button>
-          <button type="button" name="0">
-            8
-          </button>
-          <button type="button" name="0">
-            7
-          </button>
-          <button className="d" type="button" name="0">
-            x
-          </button>
-          <button type="button" name="0">
-            6
-          </button>
-          <button type="button" name="0">
-            5
-          </button>
-          <button type="button" name="0">
-            4
-          </button>
-          <button className="d" type="button" name="0">
-            -
-          </button>
-          <button type="button" name="0">
-            3
-          </button>
-          <button type="button" name="0">
-            2
-          </button>
-          <button type="button" name="0">
-            1
-          </button>
-          <button className="d" type="button" name="0">
-            +
-          </button>
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+    err: null,
+  });
+  const handleClick = (e) => {
+    setState((prevState) => calculate(prevState, e.target.textContent));
+  };
+  return (
+    <div className="container">
+      <form>
+        <div className="input">
+          {state.next || state.operation || state.total || state.err || 0}
         </div>
-        <div className="last">
-          <button type="button" name="0">
-            0
-          </button>
-          <button type="button" name="0">
-            .
-          </button>
-          <button className="d" type="button" name="0">
-            =
-          </button>
-        </div>
+      </form>
+      <div className="btn">
+        <button type="button" onClick={handleClick} name="AC">
+          AC
+        </button>
+        <button type="button" onClick={handleClick} name="+/-">
+          +/-
+        </button>
+        <button type="button" onClick={handleClick} name="%">
+          %
+        </button>
+        <button className="d" onClick={handleClick} type="button" name="÷">
+          ÷
+        </button>
+        <button type="button" onClick={handleClick} name="9">
+          9
+        </button>
+        <button type="button" onClick={handleClick} name="8">
+          8
+        </button>
+        <button type="button" onClick={handleClick} name="7">
+          7
+        </button>
+        <button className="d" onClick={handleClick} type="button" name="x">
+          x
+        </button>
+        <button type="button" onClick={handleClick} name="6">
+          6
+        </button>
+        <button type="button" onClick={handleClick} name="5">
+          5
+        </button>
+        <button type="button" onClick={handleClick} name="4">
+          4
+        </button>
+        <button className="d" onClick={handleClick} type="button" name="-">
+          -
+        </button>
+        <button type="button" onClick={handleClick} name="3">
+          3
+        </button>
+        <button type="button" onClick={handleClick} name="2">
+          2
+        </button>
+        <button type="button" onClick={handleClick} name="1">
+          1
+        </button>
+        <button className="d" onClick={handleClick} type="button" name="+">
+          +
+        </button>
       </div>
-    );
-  }
-}
+      <div className="last">
+        <button type="button" onClick={handleClick} name="0">
+          0
+        </button>
+        <button type="button" onClick={handleClick} name=".">
+          .
+        </button>
+        <button className="d" onClick={handleClick} type="button" name="=">
+          =
+        </button>
+      </div>
+    </div>
+  );
+};
 
 export default Calculator;
