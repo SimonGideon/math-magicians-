@@ -4,7 +4,6 @@
 }
 
 .navbar {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
@@ -16,10 +15,16 @@
   display: flex;
   list-style: none;
   gap: 1rem;
+  align-items: center;
 }
 
 .bordered {
   border-left: 0.1rem solid black;
   border-right: 0.1rem solid black;
   padding: 0 0.5rem;
+}
+
+.header {
+    text-decoration: none;
+    font-size: 2rem;
 }
