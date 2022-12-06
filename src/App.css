@@ -7,13 +7,21 @@
 .input {
   width: 100%;
   height: 3rem;
-  background-color: rgba(145, 135, 135, 0.575);
+  background-color: transparent;
+  border: 1px solid gray;
   text-align: right;
   font-size: large;
 }
 
 button {
   padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset !important;
+  border: none;
+}
+
+button:hover {
+  border: 1px solid #635bff;
+  transform: scale(1.05);
 }
 
 .btn {
@@ -34,11 +42,15 @@ button {
 }
 
 .d {
-  background-color: orange;
+  background-color: #635bff;
 }
 
 .MainCalc {
   width: 30%;
+}
+
+.CalcHeading {
+  color: #635bff;
 }
 
 
@@ -56,6 +68,11 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  color: #0a2540;
+}
+
+.HomeConctainer h1 {
+  color: #635bff;
 }
 
 /* Quotes */

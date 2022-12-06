@@ -27,7 +27,8 @@
 .header {
   text-decoration: none;
   font-size: 2rem;
-  color: black;
+  color: #635bff;
+  font-weight: 900;
 }
 
 li {
@@ -36,6 +37,7 @@ li {
 }
 
 li * {
-  color: black;
+  color: #635bff;
   text-decoration: none;
+  font-weight: 900;
 }
