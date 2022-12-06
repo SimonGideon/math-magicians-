@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  margin-top: 5rem;
-  padding: 0 35% 35%;
   height: 10vh;
 }
 
@@ -23,6 +21,7 @@ button {
 }
 
 .container {
+  padding: 0 35% 35%;
   text-align: center !important;
   justify-content: center;
 }
