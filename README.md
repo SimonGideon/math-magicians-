@@ -224,8 +224,6 @@ Example:
 - GitHub: [@SimonGideon](https://github.com/SimonGideon)
 - Twitter: [@Simo_Giddy](https://twitter.com/Simo_Giddy)
 - LinkedIn: [mnayi-gideon](https://linkedin.com/in/mnayi-gideon)
-rhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
