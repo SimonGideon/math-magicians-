@@ -76,6 +76,21 @@ button:hover {
 
 /* Quotes */
 .QoutesContainer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 10% 10%;
   font-size: 1.7rem;
+  font-style: italic;
+}
+
+span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 100;
+  color: #635bff;
+  font-size: 1rem;
+}
+
+b {
+  color: #635bff;
+  font-weight: bolder;
 }
