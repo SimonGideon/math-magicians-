@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 3px 0;
+  margin-bottom: 2rem;
+}
+
+.pages {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bordered {
+  border-left: 0.1rem solid black;
+  border-right: 0.1rem solid black;
+  padding: 0.25rem;
+}
+
+.header {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #635bff;
+  font-weight: 900;
+}
+
+li {
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+li * {
+  color: #635bff;
+  text-decoration: none;
+  font-weight: 900;
+}

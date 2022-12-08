@@ -1,38 +1,96 @@
 .App {
   text-align: center;
+  height: 10vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* calculator */
+.input {
+  width: 100%;
+  height: 3rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  text-align: right;
+  font-size: large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset !important;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  border: 1px solid #635bff;
+  transform: scale(1.05);
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  display: flex;
+  text-align: center !important;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.last {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.d {
+  background-color: #635bff;
+}
+
+.MainCalc {
+  width: 30%;
+}
+
+.CalcHeading {
+  color: #635bff;
+}
+
+/* home page */
+
+.HomeConctainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  gap: 1.1rem;
+  margin: 0 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.HomeBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #0a2540;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HomeConctainer h1 {
+  color: #635bff;
+}
+
+/* Quotes */
+.QoutesContainer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 10% 10%;
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 100;
+  color: #635bff;
+  font-size: 1rem;
+}
+
+b {
+  color: #635bff;
+  font-weight: bolder;
 }
